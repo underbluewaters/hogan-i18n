@@ -1,0 +1,18 @@
+#!/usr/bin/env node
+
+if (process.argv.length < 3) {
+  console.log('Usage: ./getstrings /path/to/template/dir [extension]');
+  process.exit();
+}
+
+var dirPath = process.argv[2];
+var extension = process.argv[3] || "mustache";
+
+var i18n = require(__dirname + '/../index.js');
+var strings = i18n.extractStringsFromDir(dirPath, {}, extension);
+
+if (strings.length < 1) {
+  throw new Error("No strings found in " + dirPath);
+}
+
+console.log(i18n.createPOFromStrings(strings).toString());

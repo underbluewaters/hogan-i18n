@@ -1,0 +1,18 @@
+{
+  "name": "hogan-i18n",
+  "version": "0.1.1",
+  "description": "Testing out i18n functionality in hogan",
+  "homepage": "https://github.com/underbluewaters/hogan-i18n",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/nodeunit/bin/nodeunit test/index.js"
+  },
+  "author": "Chad Burt <chad@underbluewaters.net>",
+  "license": "BSD",
+  "dependencies": {
+    "hogan.js": "~3.0.2",
+    "node-gettext": "~0.2.14",
+    "nodeunit": "~0.9.0",
+    "walkdir": "0.0.7"
+  }
+}

@@ -1,0 +1,46 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: node-gettext\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.6.7\n"
+"Language: es\n"
+
+#: mixedTags.mustache:1
+msgid "Let's see, {{#foo}}foo is true{{/foo}}{{^foo}}foo is false{{/foo}}."
+msgstr ""
+"Vamos a ver, {{# foo}}foo es cierto{{/ foo}}{{^ foo}}foo es falso{{/ foo}}."
+
+#: mixedTags.mustache:5
+msgid "{{#posts}}  Post title is {{title}}.{{/posts}}"
+msgstr "{{#posts}}  Título de la publicación es {{title}}.{{/posts}}"
+
+#: newlines.mustache:2
+msgid "My name is {{name}}."
+msgstr "Mi nombre es {{name}}."
+
+#: otherTags.mustache:1
+msgid "Testing triple {{{mustaches}}}."
+msgstr "Testing triples {{{mustaches}}}"
+
+#: otherTags.mustache:5
+msgid "Testing {{& unescape}} variables."
+msgstr "Pruebas {{& unescape}} variables."
+
+#: otherTags.mustache:7
+msgid "Testing nested partials. {{> partialName}}"
+msgstr "Pruebas parciales anidados. {{> partialName}}"
+
+#: votes.mustache:2
+msgid "She has {{num}} votes."
+msgstr "Ella tiene {{num}} votos."
+
+#: votes.mustache:8
+msgid "She has one vote."
+msgstr "Ella tiene un voto."
