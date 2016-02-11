@@ -78,6 +78,12 @@ function extractString (parent, originalText, filename) {
         case '&':
           string.original += node.otag + "& " + node.n + node.ctag;
           break;
+        case '$':
+          string.original += node.otag + "$ " + node.n + node.ctag;
+          break;
+        case '<':
+          string.original += node.otag + "< " + node.n + node.ctag;
+          break;
         default:
           string.original += node.otag + node.n + node.ctag;
       }
