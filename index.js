@@ -13,7 +13,7 @@ function extractStrings (nodes, originalText, filename, strings) {
   for (var i = 0; i < nodes.length; i++) {
     var node = nodes[i];
     // look for _i tag
-    if (node.tag === '#' || node.tag === "^") {
+    if (node.tag === '#' || node.tag === "^" || node.tag === '$' || node.tag === '<') {
       if (node.n === '_i') {
         var string = extractString(node, originalText, filename);
         strings.push(string);
@@ -29,7 +29,7 @@ function replaceStrings (nodes, gettext, originalText, filename, options) {
   for (var i = 0; i < nodes.length; i++) {
     var node = nodes[i];
     // look for _i tag
-    if (node.tag === '#' || node.tag === "^") {
+    if (node.tag === '#' || node.tag === "^" || node.tag === '$' || node.tag === '<') {
       if (node.n === '_i') {
         var string = extractString(node, originalText, filename).trimmed;
         var translated = gettext(string);
